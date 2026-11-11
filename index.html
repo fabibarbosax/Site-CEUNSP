@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colégio CEUNSP · Itu e Salto</title>
+  <meta name="description" content="Colégio CEUNSP em Itu e Salto: tradição desde 1972, campus universitário e a Astra, a estrela que vive o CEUNSP com você.">
+  <meta name="theme-color" content="#0e2350">
+  <link rel="icon" href="assets/img/astra-simples.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500..700&family=Nunito+Sans:wght@400..800&family=Caveat:wght@600..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="topbar" id="topo">
+    <div class="wrap topbar__in">
+      <a href="#topo" class="brand" aria-label="Colégio CEUNSP, início">
+        <svg class="brand__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.8l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9l7.1-.6z"/></svg>
+        <span class="brand__txt"><small>Colégio</small>CEUNSP</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#ensino">Ensino</a>
+        <a href="#astra">Astra</a>
+        <a href="#jornada">Matrícula</a>
+        <a href="#unidades">Unidades</a>
+        <a href="#visita" class="btn btn--red btn--sm">Agende uma visita</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+    <div class="progress" id="progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <canvas id="sky" aria-hidden="true"></canvas>
+      <div class="wrap hero__in">
+        <div class="hero__txt">
+          <p class="eyebrow eyebrow--light reveal">Itu · Salto · Matrículas 2027</p>
+          <h1 class="hero__title reveal">Aqui, todo<br>mundo <span class="glow">brilha.</span></h1>
+          <p class="hand hero__hand reveal">a estrela que vive o CEUNSP com você.</p>
+          <p class="hero__lead reveal">Mais de 50 anos de tradição em educação, estrutura de campus universitário e uma comunicação que conversa de verdade com alunos e famílias.</p>
+          <div class="hero__ctas reveal">
+            <a href="#visita" class="btn btn--red">Quero conhecer o colégio</a>
+            <a href="#astra" class="btn btn--ghost">Conheça a Astra ✦</a>
+          </div>
+        </div>
+        <div class="hero__mascot" id="heroMascot">
+          <div class="halo" aria-hidden="true"></div>
+          <button class="astra-btn" id="astraHero" aria-label="Clique na Astra para ela falar com você">
+            <img src="assets/img/astra-3d.png" alt="Astra, a estrela mascote do CEUNSP, piscando e fazendo sinal de paz" width="760" height="797">
+          </button>
+          <div class="bubble bubble--hero" id="heroBubble" role="status" aria-live="polite">Oi! Eu sou a Astra. Clica em mim! ✦</div>
+        </div>
+      </div>
+      <a href="#sobre" class="scroll-cue" aria-label="Rolar para baixo"><span></span></a>
+    </section>
+
+    <!-- faixa -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>curiosa</span><i>✦</i><span>parceira</span><i>✦</i><span>criativa</span><i>✦</i><span>bem-humorada</span><i>✦</i><span>acolhedora</span><i>✦</i><span class="hand">bora brilhar!</span><i>✦</i>
+        <span>curiosa</span><i>✦</i><span>parceira</span><i>✦</i><span>criativa</span><i>✦</i><span>bem-humorada</span><i>✦</i><span>acolhedora</span><i>✦</i><span class="hand">bora brilhar!</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ SOBRE / HISTÓRIA ============ -->
+    <section class="sec sec--paper" id="sobre" data-astra="Sabia que essa história começou em 1972? Arrasta a linha do tempo pra ver! →">
+      <div class="wrap">
+        <div class="head reveal">
+          <p class="eyebrow">Nossa história</p>
+          <h2>Uma estrela que vem<br>brilhando há gerações</h2>
+        </div>
+
+        <div class="stats">
+          <div class="stat reveal"><b data-count="50" data-suffix="+">0</b><span>anos de tradição em educação</span></div>
+          <div class="stat reveal"><b data-count="130" data-suffix=" mil">0</b><span>m² de campus universitário em Salto</span></div>
+          <div class="stat reveal"><b data-count="2">0</b><span>unidades: Itu e Salto</span></div>
+          <div class="stat reveal"><b data-count="1">0</b><span>estrela pra acompanhar cada aluno</span></div>
+        </div>
+
+        <div class="timeline reveal" id="timeline">
+          <div class="timeline__rail" id="rail" tabindex="0" aria-label="Linha do tempo, role horizontalmente">
+            <article class="tl"><span class="tl__year">1971</span><h3>Nasce a Sociedade de Educação</h3><p>O professor Rubens Anganuzzi assume a instituição, que passa a se chamar Sociedade de Educação Nossa Senhora do Patrocínio.</p></article>
+            <article class="tl"><span class="tl__year">1972</span><h3>Fundação em Itu</h3><p>A faculdade é fundada no centenário da chegada das Irmãs de Chambéry, herdeiras de uma longa tradição educacional.</p></article>
+            <article class="tl"><span class="tl__year">1998</span><h3>Começa o campus Salto</h3><p>Uma antiga vinícola, a Milioni, começa a ser transformada em espaço de ensino.</p></article>
+            <article class="tl"><span class="tl__year">2001</span><h3>Campus Salto inaugurado</h3><p>Cerca de 130 mil m² de terreno e o antigo conjunto da fábrica ganham nova vida como espaço de ensino.</p></article>
+            <article class="tl"><span class="tl__year">2016</span><h3>Cruzeiro do Sul Educacional</h3><p>O CEUNSP passa a integrar um dos maiores grupos educacionais do país, ampliando estrutura e recursos.</p></article>
+            <article class="tl tl--star"><span class="tl__year">2027</span><h3>A estrela ganha vida</h3><p>A estrela do logo sai da marca e vira a Astra, parceira dos alunos na rotina, nas redes e na matrícula.</p><img src="assets/img/astra-simples.png" alt="" width="360" height="333"></article>
+          </div>
+          <div class="timeline__ctrl">
+            <button class="round" data-dir="-1" aria-label="Voltar na linha do tempo">←</button>
+            <button class="round" data-dir="1" aria-label="Avançar na linha do tempo">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ENSINO ============ -->
+    <section class="sec" id="ensino" data-astra="Escolhe uma etapa aí em cima. Cada fase tem um jeito de brilhar!">
+      <div class="wrap">
+        <div class="head reveal">
+          <p class="eyebrow">Segmentos</p>
+          <h2>Da primeira descoberta<br>ao vestibular</h2>
+        </div>
+
+        <div class="tabs reveal" role="tablist" aria-label="Segmentos de ensino">
+          <button role="tab" aria-selected="true" aria-controls="p-inf" id="t-inf">Educação Infantil</button>
+          <button role="tab" aria-selected="false" aria-controls="p-f1" id="t-f1" tabindex="-1">Fundamental I</button>
+          <button role="tab" aria-selected="false" aria-controls="p-f2" id="t-f2" tabindex="-1">Fundamental II</button>
+          <button role="tab" aria-selected="false" aria-controls="p-em" id="t-em" tabindex="-1">Ensino Médio</button>
+        </div>
+
+        <div class="panels">
+          <div class="panel is-on" role="tabpanel" id="p-inf" aria-labelledby="t-inf">
+            <div class="panel__txt">
+              <p class="panel__tag">Primeiros passos</p>
+              <h3>Brincar também é aprender</h3>
+              <p>Um ambiente acolhedor para descobrir o mundo com curiosidade, afeto e muita mão na massa, com a família sempre por perto.</p>
+              <ul class="ticks"><li>Rotina acolhedora e segura</li><li>Aprender brincando e explorando</li><li>Parceria próxima com a família</li></ul>
+            </div>
+            <img src="assets/img/exp-carinhosa.png" alt="Astra carinhosa, abraçando um coração" loading="lazy">
+          </div>
+          <div class="panel" role="tabpanel" id="p-f1" aria-labelledby="t-f1" hidden>
+            <div class="panel__txt">
+              <p class="panel__tag">1º ao 5º ano</p>
+              <h3>Curiosidade que vira conhecimento</h3>
+              <p>Alfabetização, raciocínio e autonomia ganham forma em projetos que fazem sentido para a criança, no ritmo de cada uma.</p>
+              <ul class="ticks"><li>Base sólida em leitura e matemática</li><li>Projetos e trabalho em grupo</li><li>Hábitos de estudo desde cedo</li></ul>
+            </div>
+            <img src="assets/img/exp-curiosa.png" alt="Astra curiosa, com a mão no queixo" loading="lazy">
+          </div>
+          <div class="panel" role="tabpanel" id="p-f2" aria-labelledby="t-f2" hidden>
+            <div class="panel__txt">
+              <p class="panel__tag">6º ao 9º ano</p>
+              <h3>Crescer com voz própria</h3>
+              <p>Mais disciplinas, mais desafios e mais protagonismo. É a fase de descobrir talentos, aprender a se organizar e trabalhar em equipe.</p>
+              <ul class="ticks"><li>Organização e autonomia nos estudos</li><li>Projetos que conectam as disciplinas</li><li>Esporte, cultura e convivência</li></ul>
+            </div>
+            <img src="assets/img/exp-descolada.png" alt="Astra descolada, de óculos escuros" loading="lazy">
+          </div>
+          <div class="panel" role="tabpanel" id="p-em" aria-labelledby="t-em" hidden>
+            <div class="panel__txt">
+              <p class="panel__tag">1ª à 3ª série</p>
+              <h3>Do colégio para o futuro</h3>
+              <p>Preparação para o ENEM e vestibulares, orientação para escolhas e a vivência de um campus universitário bem ao lado.</p>
+              <ul class="ticks"><li>Foco em ENEM e vestibulares</li><li>Apoio na escolha da carreira</li><li>Estrutura do ensino superior por perto</li></ul>
+            </div>
+            <img src="assets/img/exp-confiante.png" alt="Astra confiante, com o polegar para cima" loading="lazy">
+          </div>
+        </div>
+        <p class="note">Segmentos e turmas podem variar por unidade. Confirme a disponibilidade com a secretaria.</p>
+      </div>
+    </section>
+
+    <!-- ============ DIFERENCIAIS ============ -->
+    <section class="sec sec--navy" id="diferenciais" data-astra="Passa o mouse nos cartões. Eles têm um segredinho ✦">
+      <div class="wrap">
+        <div class="head reveal">
+          <p class="eyebrow eyebrow--light">Por que o CEUNSP</p>
+          <h2>Motivos para escolher<br>a nossa estrela</h2>
+        </div>
+        <div class="cards">
+          <article class="card tilt reveal">
+            <img src="assets/img/astra-livros.png" alt="" loading="lazy">
+            <h3>Campus universitário</h3>
+            <p>Em Salto, o colégio fica dentro do campus do CEUNSP: espaço amplo e o ensino superior bem perto do dia a dia.</p>
+          </article>
+          <article class="card tilt reveal">
+            <img src="assets/img/astra-tablet.png" alt="" loading="lazy">
+            <h3>Grupo Cruzeiro do Sul</h3>
+            <p>Desde 2016, parte da Cruzeiro do Sul Educacional, com a força e os recursos de um grande grupo de ensino.</p>
+          </article>
+          <article class="card tilt reveal">
+            <img src="assets/img/astra-megafone.png" alt="" loading="lazy">
+            <h3>Comunicação próxima</h3>
+            <p>Informação completa para as famílias e uma voz que conversa com o aluno, do 1º ano ao 3º do Médio.</p>
+          </article>
+          <article class="card tilt reveal">
+            <img src="assets/img/astra-paz.png" alt="" loading="lazy">
+            <h3>Escolha em família</h3>
+            <p>Pais decidem e os filhos também opinam. Aqui, os dois se sentem em casa desde a primeira visita.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ASTRA ============ -->
+    <section class="sec sec--paper astra" id="astra" data-astra="Esse quiz é sobre mim! Bora descobrir qual Astra você é?">
+      <div class="wrap astra__grid">
+        <div class="astra__intro">
+          <p class="eyebrow reveal">Prazer, Astra</p>
+          <h2 class="reveal">A estrela que saiu<br>do logo</h2>
+          <p class="lead reveal">Do latim, <b>astra</b> quer dizer <b>estrelas</b>. Ela nasceu da estrela que já está na marca do CEUNSP e agora acompanha a rotina dos alunos: nas aulas, nas redes, nos eventos e na matrícula.</p>
+          <div class="chips reveal">
+            <span>curiosa</span><span>parceira</span><span>criativa</span><span class="chip--red">bem-humorada</span><span>acolhedora</span>
+          </div>
+          <div class="versions reveal">
+            <button class="ver is-on" data-src="assets/img/astra-3d.png" data-alt="Astra versão completa em 3D">Versão completa</button>
+            <button class="ver" data-src="assets/img/astra-simples.png" data-alt="Astra versão simplificada">Versão simplificada</button>
+          </div>
+          <div class="ver-stage reveal"><img id="verImg" src="assets/img/astra-3d.png" alt="Astra versão completa em 3D" loading="lazy"></div>
+        </div>
+
+        <div class="quiz reveal" id="quiz" aria-live="polite">
+          <div class="quiz__card">
+            <p class="eyebrow">Quiz relâmpago</p>
+            <h3 class="quiz__title">Qual Astra é você?</h3>
+            <div class="quiz__dots" id="quizDots"><i></i><i></i><i></i></div>
+            <div id="quizBody"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LINHA ASTRA ============ -->
+    <section class="sec" id="produtos" data-astra="Arrasta pro lado! Tem mochila, caderno, estojo e uniforme com estrela.">
+      <div class="wrap">
+        <div class="head head--row reveal">
+          <div>
+            <p class="eyebrow">Linha Astra</p>
+            <h2>A estrela vai junto<br>pra todo lugar</h2>
+          </div>
+          <p class="muted">Material escolar, uniformes e o Kit Astra de boas-vindas. Arraste para ver.</p>
+        </div>
+      </div>
+      <div class="shelf" id="shelf" tabindex="0" aria-label="Galeria de produtos, role horizontalmente">
+        <figure class="prod"><img src="assets/img/kit.jpg" alt="Kit de boas-vindas com mochila, caderno, estojo e adesivos da Astra" loading="lazy"><figcaption><b>Kit Astra</b>Um presente para cada nova matrícula: mochila, caderno, estojo e adesivos.</figcaption></figure>
+        <figure class="prod"><img src="assets/img/mochilas.jpg" alt="Mochilas azul e vermelha com o patch da Astra" loading="lazy"><figcaption><b>Mochilas</b>Patch bordado e o mote “bora brilhar!” no bolso da frente.</figcaption></figure>
+        <figure class="prod"><img src="assets/img/cadernos.jpg" alt="Três cadernos com a Astra nas cores do CEUNSP" loading="lazy"><figcaption><b>Cadernos</b>Capas para o Fundamental e versão discreta para o Médio.</figcaption></figure>
+        <figure class="prod"><img src="assets/img/estojos.jpg" alt="Dois estojos e lápis com a Astra" loading="lazy"><figcaption><b>Estojos e lápis</b>“Tudo no lugar. O brilho também.”</figcaption></figure>
+        <figure class="prod"><img src="assets/img/uniformes.jpg" alt="Uniformes com agasalho college, camisetas e bermuda" loading="lazy"><figcaption><b>Uniforme com estrela</b>Agasalho college, camiseta “Time Astra” e peça discreta para o Médio.</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ============ JORNADA ============ -->
+    <section class="sec sec--paper" id="jornada" data-astra="Eu acompanho sua família em cada passo, do primeiro oi até a indicação!">
+      <div class="wrap">
+        <div class="head reveal">
+          <p class="eyebrow">Jornada da matrícula</p>
+          <h2>A Astra em cada etapa</h2>
+        </div>
+        <div class="journey" id="journey">
+          <div class="journey__line"><div class="journey__fill" id="jFill"></div><img class="journey__astra" id="jAstra" src="assets/img/astra-simples.png" alt="" width="360" height="333"></div>
+          <ol class="journey__steps">
+            <li><b>1</b><h3>Descobre</h3><p>Um post ou vídeo com a Astra chama atenção.</p></li>
+            <li><b>2</b><h3>Se encanta</h3><p>Stories, enquetes e conversa de verdade.</p></li>
+            <li><b>3</b><h3>Visita</h3><p>Visita guiada para conhecer o colégio.</p></li>
+            <li class="is-red"><b>4</b><h3>Matricula</h3><p>E recebe o Kit Astra de boas-vindas.</p></li>
+            <li><b>5</b><h3>Indica</h3><p>Estrela boa brilha junto.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ CHAT ============ -->
+    <section class="sec sec--navy" id="faq" data-astra="Pode perguntar! Eu respondo rapidinho.">
+      <div class="wrap faq">
+        <div class="faq__side">
+          <p class="eyebrow eyebrow--light reveal">Pais perguntam</p>
+          <h2 class="reveal">A Astra<br>responde</h2>
+          <p class="reveal soft">Escolha uma pergunta. Para assuntos oficiais, a secretaria confirma tudo com você.</p>
+          <img class="faq__astra reveal" src="assets/img/astra-pensando.png" alt="Astra pensativa, com a mão no queixo" loading="lazy">
+        </div>
+        <div class="chat reveal">
+          <div class="chat__head"><img src="assets/img/astra-simples.png" alt=""><div><b>Astra</b><small id="chatStatus">online ✦</small></div></div>
+          <div class="chat__log" id="chatLog" aria-live="polite"></div>
+          <div class="chat__qs" id="chatQs"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ UNIDADES ============ -->
+    <section class="sec sec--paper" id="unidades" data-astra="Itu ou Salto? Escolhe a sua e eu mostro o caminho!">
+      <div class="wrap">
+        <div class="head reveal">
+          <p class="eyebrow">Unidades</p>
+          <h2>Duas cidades,<br>uma só estrela</h2>
+        </div>
+        <div class="units">
+          <article class="unit reveal">
+            <div class="unit__map" aria-hidden="true"><span class="pin">✦</span><span class="city">Itu</span></div>
+            <div class="unit__body">
+              <h3>Unidade Itu</h3>
+              <p>Rua do Patrocínio, 716<br>CEP 13300-200 · Itu/SP</p>
+              <a class="phone" href="tel:+551140139831">(11) 4013-9831</a>
+              <div class="unit__ctas">
+                <a class="btn btn--navy btn--sm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rua+do+Patroc%C3%ADnio+716+Itu+SP">Como chegar</a>
+                <a class="btn btn--line btn--sm" href="tel:+551140139831">Ligar</a>
+              </div>
+            </div>
+          </article>
+          <article class="unit reveal">
+            <div class="unit__map unit__map--red" aria-hidden="true"><span class="pin">✦</span><span class="city">Salto</span></div>
+            <div class="unit__body">
+              <h3>Unidade Salto</h3>
+              <p>Praça Antônio Vieira Tavares, 73<br>CEP 13320-219 · Salto/SP · no campus CEUNSP</p>
+              <a class="phone" href="tel:+551140288325">(11) 4028-8325</a> <span class="muted">/</span> <a class="phone" href="tel:+551140288308">4028-8308</a>
+              <div class="unit__ctas">
+                <a class="btn btn--navy btn--sm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a+Ant%C3%B4nio+Vieira+Tavares+73+Salto+SP">Como chegar</a>
+                <a class="btn btn--line btn--sm" href="tel:+551140288325">Ligar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISITA ============ -->
+    <section class="sec sec--red" id="visita" data-astra="Monta sua visita em 3 cliques. Eu te passo o contato certinho!">
+      <div class="wrap visit">
+        <div class="visit__txt">
+          <p class="eyebrow eyebrow--light reveal">Vem pro CEUNSP</p>
+          <h2 class="reveal">Agende sua visita</h2>
+          <p class="hand visit__hand reveal">só falta você brilhar com a gente.</p>
+          <img class="visit__astra reveal" src="assets/img/exp-animada.png" alt="Astra animada, comemorando" loading="lazy">
+        </div>
+        <form class="planner reveal" id="planner" novalidate>
+          <fieldset>
+            <legend>1. Qual unidade?</legend>
+            <div class="opts">
+              <label><input type="radio" name="unidade" value="Itu"><span>Itu</span></label>
+              <label><input type="radio" name="unidade" value="Salto"><span>Salto</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>2. Para qual etapa?</legend>
+            <div class="opts">
+              <label><input type="radio" name="etapa" value="Educação Infantil"><span>Infantil</span></label>
+              <label><input type="radio" name="etapa" value="Fundamental I"><span>Fund. I</span></label>
+              <label><input type="radio" name="etapa" value="Fundamental II"><span>Fund. II</span></label>
+              <label><input type="radio" name="etapa" value="Ensino Médio"><span>Médio</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>3. Melhor período?</legend>
+            <div class="opts">
+              <label><input type="radio" name="periodo" value="manhã"><span>Manhã</span></label>
+              <label><input type="radio" name="periodo" value="tarde"><span>Tarde</span></label>
+            </div>
+          </fieldset>
+          <button class="btn btn--navy btn--block" type="submit">Montar minha visita ✦</button>
+          <div class="planner__out" id="plannerOut" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <div>
+        <a href="#topo" class="brand brand--light"><svg class="brand__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.8l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9l7.1-.6z"/></svg><span class="brand__txt"><small>Colégio</small>CEUNSP</span></a>
+        <p class="hand foot__hand">a estrela que vive o CEUNSP com você.</p>
+      </div>
+      <div><h4>Itu</h4><p>Rua do Patrocínio, 716<br><a href="tel:+551140139831">(11) 4013-9831</a></p></div>
+      <div><h4>Salto</h4><p>Praça Antônio Vieira Tavares, 73<br><a href="tel:+551140288325">(11) 4028-8325</a> / <a href="tel:+551140288308">8308</a></p></div>
+      <div><h4>Navegue</h4><p><a href="#sobre">Sobre</a> · <a href="#ensino">Ensino</a> · <a href="#astra">Astra</a> · <a href="#unidades">Unidades</a></p></div>
+    </div>
+    <div class="wrap foot__note">
+      <p>Site conceito desenvolvido como parte do projeto “Astra — Proposta para o Colégio CEUNSP”, por Fabiana Barbosa, Karen Bonfá e Maria Clara Pelegrino. Não é o site oficial do colégio; endereços, telefones e segmentos devem ser confirmados com a instituição.</p>
+      <p class="egg">Dica: digite <kbd>astra</kbd> em qualquer lugar da página ✦</p>
+    </div>
+  </footer>
+
+  <!-- Astra guia flutuante -->
+  <aside class="guide" id="guide" aria-label="Astra, sua guia pelo site">
+    <div class="guide__bubble" id="guideBubble" role="status" aria-live="polite">Oi! Vou te acompanhar pelo site ✦</div>
+    <button class="guide__btn" id="guideBtn" aria-label="Mostrar ou esconder a dica da Astra"><img src="assets/img/astra-simples.png" alt="" width="360" height="333"></button>
+  </aside>
+
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
